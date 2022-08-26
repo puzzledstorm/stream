@@ -25,3 +25,4 @@ Real-Time Messaging Protocol (RTMP) is communication technology that enables liv
 It’s based on Transmission Control Protocol (TCP) technology and was originally developed by Macromedia for their Flash Player, 
 which later became Adobe Flash Player after the company was acquired by Adobe.
 ```
+ref: https://zhuanlan.zhihu.com/p/73984438
