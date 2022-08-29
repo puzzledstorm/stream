@@ -19,6 +19,14 @@ ffmpeg -i rtmp://server/live/streamName -c copy dump.flv
 参考： https://blog.wolf4096.top/9.wolf
 ```
 
+# ffmpeg win10本地nginx rtmp推流拉流搭建
+参考： https://blog.csdn.net/u013554213/article/details/87342605
+```
+nginx.exe -c conf\nginx-win-rtmp.conf
+ffmpeg -re -i 经典广告合集.flv -f flv rtmp://127.0.0.1:1935/live/stream
+ffplay -fs rtmp://127.0.0.1:1935/live/stream
+```
+
 # [rtmp](https://en.wikipedia.org/wiki/Real-Time_Messaging_Protocol)
 ```
 Real-Time Messaging Protocol (RTMP) is communication technology that enables live video streaming over the internet. 
