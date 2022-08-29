@@ -13,6 +13,10 @@ ffmpeg -re -i 桥本环奈.flv -f flv rtmp://127.0.0.1:1935/live/123
 ffmpeg -i rtmp://server/live/streamName -c copy dump.flv
 ```
 
+# ffmplay播放rtmp流
+```
+ffplay -i rtmp://127.0.0.1:1935/live/123
+```
 
 # 超星学习通推流
 ```
