@@ -13,6 +13,18 @@ ffmpeg -re -i 桥本环奈.flv -f flv rtmp://127.0.0.1:1935/live/123
 ffmpeg -i rtmp://server/live/streamName -c copy dump.flv
 ```
 
+# ffmplay播放rtmp流
+```
+ffplay -i rtmp://127.0.0.1:1935/live/123
+```
+
+# ffmpeg win10本地nginx rtmp推流拉流搭建
+参考： https://blog.csdn.net/u013554213/article/details/87342605
+```
+nginx.exe -c conf\nginx-win-rtmp.conf
+ffmpeg -re -i 经典广告合集.flv -f flv rtmp://127.0.0.1:1935/live/stream
+ffplay -fs rtmp://127.0.0.1:1935/live/stream
+```
 
 # 超星学习通推流
 ```
