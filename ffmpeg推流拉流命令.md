@@ -4,6 +4,9 @@ ffmpeg -re -i test.flv -c copy -f flv rtmp://server/live/streamName
 -re 减慢推流的帧率
 -c copy 表示将流直接拷贝
 
+ffmpeg -re -stream_loop -1 -i video.mp4 -f flv -c copy -flvflags no_duration_filesize rtmp://192.168.183.43:1935/stream/2333
+-stream_loop -1 无限循环推流
+
 本地视频推流
 ffmpeg -re -i 桥本环奈.flv -f flv rtmp://127.0.0.1:1935/live/123
 
@@ -13,7 +16,7 @@ ffmpeg -re -i 桥本环奈.flv -f flv rtmp://127.0.0.1:1935/live/123
 ffmpeg -i rtmp://server/live/streamName -c copy dump.flv
 ```
 
-# ffmplay播放rtmp流
+# ffplay播放rtmp流
 ```
 ffplay -i rtmp://127.0.0.1:1935/live/123
 ```
